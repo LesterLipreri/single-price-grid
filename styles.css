@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  background-color: #fff;
+  max-width: 800px;
+  width: 800px;
+  margin: auto;
+  border-radius: 9px;
+  box-shadow: rgba(20, 11, 88, 0.3) 0px 5px 12px;
+  overflow: hidden;
+}
+
+h2 {
+  color: var(--cyan);
+}
+
+#yellow {
+  color: var(--bright-yellow);
+}
+
+p {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+.box-top {
+  margin: 30px;
+}
+
+.box-top p {
+  line-height: 25px;
+}
+
+.box-bottom {
+  display: flex;
+}
+
+section {
+  flex: 1;
+  padding: 30px;
+}
+
+.box-left {
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+p.faded {
+  color: hsl(179, 43%, 75%);
+  display: flex;
+  align-items: center;
+}
+
+p.faded strong {
+  color: #fff;
+  font-size: 40px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+p.faded span {
+  opacity: 0.7;
+}
+
+.box-left p {
+  color: #fff;
+}
+
+.box-right {
+  background-color: #49bebd;
+  color: var(--light-gray);
+}
+
+.box-right p {
+  font-weight: 200;
+}
+
+button {
+  width: 100%;
+  background-color: var(--bright-yellow);
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(20, 11, 88, 0.3) 0px 5px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  padding: 15px 0;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 25px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
